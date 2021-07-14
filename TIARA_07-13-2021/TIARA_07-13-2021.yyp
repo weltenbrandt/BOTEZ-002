@@ -318,6 +318,7 @@
     {"id":{"name":"TweensAll","path":"scripts/TweensAll/TweensAll.yy",},"order":43,},
     {"id":{"name":"TweensGroup","path":"scripts/TweensGroup/TweensGroup.yy",},"order":45,},
     {"id":{"name":"TweensTarget","path":"scripts/TweensTarget/TweensTarget.yy",},"order":47,},
+    {"id":{"name":"ROOM_EMPTY_4","path":"rooms/ROOM_EMPTY_4/ROOM_EMPTY_4.yy",},"order":17,},
     {"id":{"name":"TweensIncludeDeactivated","path":"scripts/TweensIncludeDeactivated/TweensIncludeDeactivated.yy",},"order":49,},
     {"id":{"name":"TweenStop","path":"scripts/TweenStop/TweenStop.yy",},"order":51,},
     {"id":{"name":"TweenPause","path":"scripts/TweenPause/TweenPause.yy",},"order":53,},
@@ -605,6 +606,7 @@
     {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"roomId":{"name":"rm_initiate_systems","path":"rooms/rm_initiate_systems/rm_initiate_systems.yy",},},
+    {"roomId":{"name":"ROOM_EMPTY_4","path":"rooms/ROOM_EMPTY_4/ROOM_EMPTY_4.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":7,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
