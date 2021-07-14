@@ -1,0 +1,35 @@
+// IMAGE SETTINGS
+fadeAlpha = .3; // THE OPACITY OF THE PLATFORM WHEN FADED
+
+// FADE TIMING
+timer = 0;
+fadeTouchTime = 1; // HOW LONG THE PLAYER MUST WAIT ON THE PLATFORM TO TRIGGER A 'FADE EVENT' 
+waitTimeToFade = 60; // AFTER FADE EVENT IS TRIGGERED, HOW LONG IT TAKES FOR PLATFORM TO BEGIN FADING
+fadeTime = 120; // AMOUNT OF TIME TO STAY FADED
+
+// VISUAL STUFF
+
+// UP/FRESH
+upSprite      = spr_fadeTouchPlatformUp; // SPRITE TO USE WHEN PLATFORM IS 'FRESH'
+upSpriteImageSpeed = .1; // IMAGE SPEED WHEN FRESH
+upSound = snd_placeholderPop; // SOUND TO PLAY WHEN REFRESHING FROM CRUMBLE 
+// TOUCHED
+touchedSprite = spr_fadeTouchPlatformTouched; // SPRITE TO USE WHEN PLATFORM HAS BEEN TOUCHED AND WAITING TO CRUMBLE
+touchedSpriteImageSpeed = .1; // IMAGE SPEED WHEN TOUCHED AND WAITING TO CRUMBLE
+xShakeAmount = 1; // AMOUNT OF PIXELS TO SHAKE HORIZONTALLY WHEN WAITING TO CRUMBLE
+yShakeAmount = 1; // AMOUNT OF PIXELS TO SHAKE VERTICALL WHEN WAITING TO CRUMBLE
+touchedSound = snd_placeholderPop; // SOUND TO PLAY WHEN TOUCHED
+// CRUMBLE
+crumbleSprite = spr_fadeTouchPlatformCrumble; // SPRITE TO USE WHILE THIS PLATFORM CANNOT BE LANDED ON
+crumbleSpriteImageSpeed = .1; // IMAGE SPEED TO USE WHENC CANNOT BE LANDED OU 
+crumbleSound = snd_placeholderPop;; // SOUOND TO PLAY WHEN CRUMBLE TRIGGERS (IF ANY) 
+
+
+
+
+// DO NOT TOUCH BELOW
+ethereal = false; 
+anchorX = x; 
+anchorY = y; 
+
+sprite_index = upSprite; 

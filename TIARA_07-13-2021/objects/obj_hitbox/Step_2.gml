@@ -1,0 +1,6 @@
+
+
+if stationary // NON STATIONARY HITBOXES PERFORM THEIR LOGIC AFTER THEIR CONTROLING ACTOR HAS MVOED
+{
+	event_perform(ev_user0, 0); 
+}
