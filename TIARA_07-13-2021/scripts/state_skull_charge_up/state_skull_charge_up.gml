@@ -1,7 +1,9 @@
 function state_skull_charge_up() {
 	if state_new
 	{
-		sprite_index = spr_skullAlarm; 
+		
+		sprite_index = chargeSprite; 
+
 		state_var[1] = 0; 
 	}
 

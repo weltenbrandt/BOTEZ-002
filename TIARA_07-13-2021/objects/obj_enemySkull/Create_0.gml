@@ -77,6 +77,7 @@ image_yscale = myScale;
 idleSprite = spr_skullIdle; 
 hitStunSprite = spr_skullIdle; 
 deathSprite = spr_skullExplode; 
+chargeSprite = spr_skullAlarm;
 mask_index = spr_skullMask; 
 
 mass = 3; 

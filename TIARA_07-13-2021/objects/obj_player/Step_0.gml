@@ -1,4 +1,3 @@
-show_debug_message(sprite_get_name(sprite_index));
 
 // If we die, save the game
 if (state == "Dead")

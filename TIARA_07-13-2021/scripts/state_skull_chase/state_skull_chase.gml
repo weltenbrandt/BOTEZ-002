@@ -2,7 +2,7 @@ function state_skull_chase() {
 	if state_new
 	{
 		image_speed = idleImageSpeed; 
-		sprite_index = spr_skullIdle; 
+		sprite_index = idleSprite; 
 	
 		state_var[1] = 0; 
 		state_var[2] = random_range(chargeUpDelayMin,chargeUpDelayMax); 
@@ -11,13 +11,13 @@ function state_skull_chase() {
 #region DETERMINE SPRITE INDEX BASED ON SPEED AND FACING
 		if abs(velocity[XAXIS]) < skullTurnThreshold
 		{
-			sprite_index = spr_skullIdle; 
+			sprite_index = idleSprite; 
 		}
 		else
 		{
 			if (sign(velocity[XAXIS]) == -1)
-			{sprite_index = spr_skullChaseLeft; }
-			else{sprite_index = spr_skullChaseRight;}
+			{image_xscale = -1; }
+			else{image_xscale = 1;}
 		}
 #endregion
 

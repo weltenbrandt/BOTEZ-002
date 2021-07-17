@@ -71,11 +71,13 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":64.0,"resourceVersion":"1.0","name":"inst_135D12B1","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"player","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"instances":[],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"enemies","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_savePoint","path":"objects/obj_savePoint/obj_savePoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1056.0,"y":448.0,"resourceVersion":"1.0","name":"inst_565D2862","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"enemies","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"particles_deep","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"WARPER","path":"objects/WARPER/WARPER.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.56,"scaleY":3.133334,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":432.0,"resourceVersion":"1.0","name":"inst_3AE84E3D","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_bumper","path":"objects/obj_bumper/obj_bumper.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":528.0,"y":624.0,"resourceVersion":"1.0","name":"inst_3471FD20","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_bumper","path":"objects/obj_bumper/obj_bumper.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":624.0,"y":608.0,"resourceVersion":"1.0","name":"inst_3471FD20","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_bumper","path":"objects/obj_bumper/obj_bumper.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":45.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1952.0,"y":608.0,"resourceVersion":"1.0","name":"inst_25854FD0","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"vertical_force","path":"objects/obj_force/obj_force.yy",},"objectId":{"name":"obj_force","path":"objects/obj_force/obj_force.yy",},"value":"-0.2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -198,6 +200,7 @@
     {"name":"inst_535EA935","path":"rooms/rm_new_features_test/rm_new_features_test.yy",},
     {"name":"inst_4D713BE4","path":"rooms/rm_new_features_test/rm_new_features_test.yy",},
     {"name":"inst_77A83A96","path":"rooms/rm_new_features_test/rm_new_features_test.yy",},
+    {"name":"inst_565D2862","path":"rooms/rm_new_features_test/rm_new_features_test.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

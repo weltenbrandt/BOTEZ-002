@@ -1,3 +1,5 @@
+my_room = room;
+
 simpleState =  savePointStates.inactive; 
 
 myScale = 2;
