@@ -595,11 +595,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"ROOM_EMPTY","path":"rooms/ROOM_EMPTY/ROOM_EMPTY.yy",},},
-<<<<<<< HEAD
-    {"roomId":{"name":"rm_new_features_test","path":"rooms/rm_new_features_test/rm_new_features_test.yy",},},
+    {"roomId":{"name":"","path":"",},},
     {"roomId":{"name":"rm_Level2","path":"rooms/rm_Level2/rm_Level2.yy",},},
-=======
->>>>>>> a661d8c79f22c04f5938f2c89f2b84d15ffb8bcc
     {"roomId":{"name":"rm_Level1","path":"rooms/rm_Level1/rm_Level1.yy",},},
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"roomId":{"name":"rm_initiate_systems","path":"rooms/rm_initiate_systems/rm_initiate_systems.yy",},},
