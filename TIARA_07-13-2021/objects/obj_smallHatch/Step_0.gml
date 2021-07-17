@@ -40,3 +40,22 @@ else
 	image_blend = c_red;
 }
 #endregion
+
+// Regenerates after decreasing a cooldown variable
+
+if (regenerate_after != -1)
+{
+	if (destroyed == true)
+	{
+		if (regenerate_tick >= regenerate_after)
+		{
+			destroyed = false;
+			regenerate_tick = 0;
+		}
+		else
+		{
+			regenerate_tick++;
+		}
+
+	}
+}

@@ -1,9 +1,10 @@
-
 // State machine
 switch(state)
 {
 	case(beestates.follow):
 		#region Follows a target
+		
+		sprite_index = spr_smallBee;
 		
 		// Gets hit by the player
 		if (place_meeting(x, y, obj_hitbox))
@@ -13,8 +14,8 @@ switch(state)
 				state = beestates.hit;
 				
 				var _dir = point_direction(x, y, obj_player.x, obj_player.y);
-				knock_x = lengthdir_x(knockout, _dir);
-				knock_y = lengthdir_y(knockout, _dir);
+				knock_x = lengthdir_x(x_knockout, _dir);
+				knock_y = lengthdir_y(y_knockout, _dir);
 				
 				show_debug_message(knock_x);
 				show_debug_message(knock_y);
@@ -33,109 +34,123 @@ switch(state)
 			hspd = floor(hspd);
 			vspd = floor(vspd);
 	
-			// If the player is close, explode
-			if (distance_to_object(target) < explosion_radius / 4)
-			{
-				hspd = 0;
-				vspd = 0;
-				state = beestates.explode;
-			}
+			
 		}
+		
+		// If the player is close, explode
+		if (distance_to_object(target) < 5 or hp <= 0)
+		{
+			hspd = 0;
+			vspd = 0;
+			state = beestates.explode;
+		}
+		
 		
 		#endregion
 		break;
 	case(beestates.hit):
-	
+		#region Gets hit by the player
+		sprite_index = spr_smallBeeHurt;
+		
+		hp--;
+		
 		hspd = 0;
 		vspd = 0;
 	
 		knock_x = lerp(knock_x, 0, 0.05);
 		knock_y = lerp(knock_y, 0, 0.05);
 		
-		show_debug_message(knock_y);
-		show_debug_message(knock_x);
-		
-		if (knock_x == 0 and knock_y == 0)
+
+		if (abs(knock_y + knock_x) <= 0.20)
 		{
-			state = beestates.follow;
+			if (hp <= 0)
+			{
+				state = beestates.explode;
+			}
+			else
+			{
+				state = beestates.follow;
+			}
 		}
 		
 		x -= knock_x;
 		y -= knock_y;
-		
+		#endregion
 		break;
-	
-}
+	case(beestates.explode):
+		#region Explodes and damages player
 
-#region Follows a target
-if (distance_to_object(target) < detection_radius and state == beestates.follow)
-{
-	var _tarDir = point_direction(x, y, target.x, target.y);
-	
-	// Moves towards the player
-	hspd = lengthdir_x(spd, _tarDir);
-	vspd = lengthdir_y(spd, _tarDir);
-
-	hspd = floor(hspd);
-	vspd = floor(vspd);
-	
-	// If the player is close, explode
-	if (distance_to_object(target) < explosion_radius / 4)
-	{
-		hspd = 0;
-		vspd = 0;
-		state = beestates.explode;
-	}
-}
-#endregion
-
-#region Explodes and damages player
-
-// Damges the player if the projectile wasn't reflected
-if (state == beestates.explode)
-{
-	if (tick >= explosion_charge_time)
-	{
-		if (sprite_index != spr_smallBeeExplode)
+		// Gets hit by the player
+		if (place_meeting(x, y, obj_hitbox))
 		{
-			image_index = 0;
-			sprite_index = spr_smallBeeExplode;
-		}
-	
-		// Shakes the screen and damages the player
-		scr_screenShake(2, 0.1, 2, 0.1);
-	
-		if (distance_to_object(target) < explosion_radius and !exploded)
-		{
-			exploded = true;
-			
-			var _p = obj_player;
-			
-			// Pushes the player back
-			var _dirToPlayer = point_direction(x, y, _p.x, scr_returnMaskYMiddle(_p)); 
-			_p.xHitForce = lengthdir_x(4,_dirToPlayer); 
-			_p.yHitForce = lengthdir_y(4,_dirToPlayer); 
-			
-			scr_dealDamageToPlayer(explosion_damage);
-			
-			// Plays the player hit sound
-			var snd = snd_playerGetHitA;
-			audio_sound_pitch(snd, random_range(0.9, 1));
-			
-			
-			if (!audio_is_playing(snd))
+			if (obj_hitbox.myTeam == teams.player)
 			{
-				scr_playSoundVariant(0.1, snd); 
+				state = beestates.hit;
+				
+				var _dir = point_direction(x, y, obj_player.x, obj_player.y);
+				knock_x = lengthdir_x(x_knockout, _dir);
+				knock_y = lengthdir_y(y_knockout, _dir);
+				
+				show_debug_message(knock_x);
+				show_debug_message(knock_y);
+				
 			}
 		}
-	}
-	else
-	{
-		tick++;
-	}
-}
 
-#endregion
+		// Explodes
+		if (tick >= explosion_charge_time or hp <= 0)
+		{
+
+			if (sprite_index != deathSprite)
+			{
+				image_index = 0;
+				sprite_index = deathSprite;
+			}
+	
+			// Shakes the screen and damages the player
+			scr_screenShake(2, 0.1, 2, 0.1);
+	
+			if ( !exploded)
+			{
+				exploded = true;
+				
+				instance_create_depth(x, y, depth + 1, background_explosion);
+				
+				var snd_explo = explosion_sound;
+			
+				if (!audio_is_playing(snd_explo))
+				{
+					scr_playSoundVariant(0.1, snd_explo); 
+				}
+				
+				if (distance_to_object(target) < explosion_radius)
+				{
+					var _p = obj_player;
+			
+					// Pushes the player back
+					var _dirToPlayer = point_direction(x, y, _p.x, scr_returnMaskYMiddle(_p)); 
+					_p.xHitForce = lengthdir_x(4,_dirToPlayer); 
+					_p.yHitForce = lengthdir_y(4,_dirToPlayer); 
+			
+					scr_dealDamageToPlayer(explosion_damage);
+			
+					// Plays the player hit sound
+					var snd_hit = snd_playerGetHitA;
+				
+					if (!audio_is_playing(snd_hit))
+					{
+						scr_playSoundVariant(0.1, snd_hit); 
+					}
+				}
+			}
+		}
+		else
+		{
+			tick++;
+		}
+		#endregion
+		break;
+}
 
 #region collisions
 if (tile_meeting(x + hspd, y, "Collisions"))

@@ -1,7 +1,6 @@
 
 // Define the cooldown in seconds
 creation_cooldown = 3;
-creation_cooldown *= room_speed;
 
 // Spawn configurations
 spawn = obj_smallBee;
@@ -12,9 +11,17 @@ y_offset =0;
 collision_radius = 30;
 collision_x = x;
 collision_y = y;
-immune = true;
 
+// Destroying variables
+immune = false;
+regenerate_after = 4; // Defines for how long in seconds the hatch will stay broken.
+// ^^^ Set it to -1 if it's supposed to stay broken forever
 
 // Do not change these
+creation_cooldown *= room_speed;
+regenerate_after *= room_speed;
+
 destroyed = false;
 tick = 0;
+
+regenerate_tick = 0;
