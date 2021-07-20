@@ -39,11 +39,11 @@ else
 {
 	image_blend = c_red;
 }
-#endregion
+#endregion 
 
 // Regenerates after decreasing a cooldown variable
 
-if (regenerate_after != -1)
+if (regenerate_after > 0)
 {
 	if (destroyed == true)
 	{
