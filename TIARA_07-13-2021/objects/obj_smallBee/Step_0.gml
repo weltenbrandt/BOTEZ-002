@@ -1,5 +1,79 @@
+<<<<<<< Updated upstream
 // State machine
 switch(state)
+=======
+
+// State machine
+switch(state)
+{
+	case(beestates.follow):
+		#region Follows a target
+		
+		// Gets hit by the player
+		if (place_meeting(x, y, obj_hitbox))
+		{
+			if (obj_hitbox.myTeam == teams.player)
+			{
+				state = beestates.hit;
+				
+				var _dir = point_direction(x, y, obj_player.x, obj_player.y);
+				knock_x = lengthdir_x(knockout, _dir);
+				knock_y = lengthdir_y(knockout, _dir);
+				
+				show_debug_message(knock_x);
+				show_debug_message(knock_y);
+				
+			}
+		}
+		
+		if (distance_to_object(target) < detection_radius)
+		{
+			var _tarDir = point_direction(x, y, target.x, target.y);
+			
+			// Moves towards the player
+			hspd = lengthdir_x(spd, _tarDir);
+			vspd = lengthdir_y(spd, _tarDir);
+
+			hspd = floor(hspd);
+			vspd = floor(vspd);
+	
+			// If the player is close, explode
+			if (distance_to_object(target) < explosion_radius / 4)
+			{
+				hspd = 0;
+				vspd = 0;
+				state = beestates.explode;
+			}
+		}
+		
+		#endregion
+		break;
+	case(beestates.hit):
+	
+		hspd = 0;
+		vspd = 0;
+	
+		knock_x = lerp(knock_x, 0, 0.05);
+		knock_y = lerp(knock_y, 0, 0.05);
+		
+		show_debug_message(knock_y);
+		show_debug_message(knock_x);
+		
+		if (knock_x == 0 and knock_y == 0)
+		{
+			state = beestates.follow;
+		}
+		
+		x -= knock_x;
+		y -= knock_y;
+		
+		break;
+	
+}
+
+#region Follows a target
+if (distance_to_object(target) < detection_radius and state == beestates.follow)
+>>>>>>> Stashed changes
 {
 	case(beestates.follow):
 		#region Follows a target
@@ -118,6 +192,7 @@ switch(state)
 				
 				var snd_explo = explosion_sound;
 			
+<<<<<<< Updated upstream
 				if (!audio_is_playing(snd_explo))
 				{
 					scr_playSoundVariant(0.1, snd_explo); 
@@ -142,6 +217,25 @@ switch(state)
 						scr_playSoundVariant(0.1, snd_hit); 
 					}
 				}
+=======
+			var _p = obj_player;
+			
+			// Pushes the player back
+			var _dirToPlayer = point_direction(x, y, _p.x, scr_returnMaskYMiddle(_p)); 
+			_p.xHitForce = lengthdir_x(4,_dirToPlayer); 
+			_p.yHitForce = lengthdir_y(4,_dirToPlayer); 
+			
+			scr_dealDamageToPlayer(explosion_damage);
+			
+			// Plays the player hit sound
+			var snd = snd_playerGetHitA;
+			audio_sound_pitch(snd, random_range(0.9, 1));
+			
+			
+			if (!audio_is_playing(snd))
+			{
+				scr_playSoundVariant(0.1, snd); 
+>>>>>>> Stashed changes
 			}
 		}
 		else
