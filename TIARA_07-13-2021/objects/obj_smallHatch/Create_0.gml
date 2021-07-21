@@ -5,7 +5,7 @@ creation_cooldown = 3;
 // Spawn configurations
 spawn = obj_smallBee;
 x_offset = 0;
-y_offset =0;
+y_offset = -12;
 
 // This variables controls the reaction of the explosion from the bees
 collision_radius = 30;

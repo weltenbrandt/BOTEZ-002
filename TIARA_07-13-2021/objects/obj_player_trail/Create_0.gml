@@ -6,14 +6,14 @@ color = c_white;
 image_speed = 0;
 
 // Defines how fast the trail will disappear per tick
-fade_speed = 0.01;
+fade_speed = 0.03;
 
 // This is the percentage of the total speed of the player that will be aplied to the opacity.
 // If this is set to 0.25, it will add 25% of the player's current speed (from 0 to 1) to the starting
 //opacity. Note that doesn't mean that 1.00 doesn't mean that the trail will be fully visible, as it
 //depends on the current speed of the player, it will be fully visible if the player's speed is 1.00 and
 //the player_speed_percentage is 1.00 as well.
-player_speed_percentage = 0.25; // The default value is 25% (0.25)
+player_speed_percentage = 0.1; // The default value is 25% (0.25)
 
 
 // Acess the player to get variables
@@ -30,6 +30,8 @@ with (obj_player)
 	// Changes the color depending on the player state
 	if (launched == true)
 	{
+		other.player_speed_percentage = 0.25;
+		other.fade_speed = 0.02;
 		// Launched by a bumper
 		other.color = c_yellow
 	}
@@ -42,6 +44,7 @@ with (obj_player)
 	
 	if (state == "Dash")
 	{
+		other.player_speed_percentage = 0.25;
 		// Dashing
 		other.fade_speed = 0.02;
 		other.color = c_aqua;

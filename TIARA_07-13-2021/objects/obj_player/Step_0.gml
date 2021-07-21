@@ -81,7 +81,7 @@ spd = clamp(spd, 0, 2.1);
 
 
 
-trail_delay = (2.5 - spd) * delay_multiplier;
+trail_delay = (1.5 - spd) * delay_multiplier;
 
 // If the player is dashing or was launched, spawn more trails
 if (state == "Dash" or launched)
