@@ -1,3 +1,11 @@
+// Creates the object
+if (!already_spawned and image_index == spawn_at_frame)
+{
+	// Creates the spawned object
+	instance_create_depth(x + x_offset, y + y_offset, depth - 1, spawn);
+	already_spawned = true;
+}
+
 #region collision with bees
 
 if (!immune)

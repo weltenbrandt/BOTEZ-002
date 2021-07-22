@@ -1,3 +1,13 @@
+// Creates the object
+if (!already_spawned and image_index == spawn_at_frame)
+{
+	// Creates the spawned object
+	instance_create_depth(x + x_offset, y + y_offset, depth - 1, spawn);
+	already_spawned = true;
+}
+
+show_debug_message(tick)
+
 // Here we check the small hatches next to this object
 
 var _list = ds_list_create();
@@ -79,7 +89,7 @@ if (regenerate_after > 0)
 
 ds_list_destroy(_list);
 
-if (can_go and !destroyed)
+if (can_go and !destroyed and tick >= creation_cooldown)
 {
 	image_speed = 1;
 }
