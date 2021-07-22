@@ -1,3 +1,7 @@
+// Faces the player
+var face = round(lengthdir_x(1, point_direction(x, y, obj_player.x, obj_player.y)) * -1);
+if (face != 0) image_xscale = face;
+
 // State machine
 switch(state)
 {
