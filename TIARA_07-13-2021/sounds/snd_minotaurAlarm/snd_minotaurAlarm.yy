@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_minotaurAlarm",
-  "duration": 2.071576,
+  "duration": 2.066576,
   "parent": {
     "name": "Minotaur",
     "path": "folders/Sounds/Enemies/Minotaur.yy",
