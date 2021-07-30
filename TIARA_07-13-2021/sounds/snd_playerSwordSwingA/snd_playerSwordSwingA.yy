@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_playerSwordSwingA",
-  "duration": 0.29144,
+  "duration": 0.28644,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",

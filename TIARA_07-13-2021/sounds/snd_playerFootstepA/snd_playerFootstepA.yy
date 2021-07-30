@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_playerFootstepA",
-  "duration": 0.071939,
+  "duration": 0.066939,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",

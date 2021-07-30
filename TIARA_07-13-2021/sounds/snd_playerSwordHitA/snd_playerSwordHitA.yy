@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_playerSwordHitA",
-  "duration": 0.342732,
+  "duration": 0.337732,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",

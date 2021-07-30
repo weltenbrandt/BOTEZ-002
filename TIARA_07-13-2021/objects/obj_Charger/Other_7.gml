@@ -2,9 +2,7 @@
 
 switch(sprite_index)
 {
-	case(deathSprite):
-		instance_destroy();
-		break;
+
 	case(prepareSprite):
 		if (prepare_tick < prepare_time)
 		{

@@ -1,7 +1,5 @@
 // State machine
 
-show_debug_message(state);
-
 switch(state)
 {
 	case(Charger.idle):
@@ -60,6 +58,19 @@ switch(state)
 		break;
 	case(Charger.charge):
 		#region Charges towards the player and attacks
+		
+		
+		if (step_tick >= step_cooldown)
+		{
+			step_tick = 0;
+			
+			audio_sound_pitch(step_sound, random_range(0.9, 1.1));
+			audio_play_sound(step_sound, 1, false);
+		}
+		else
+		{
+			step_tick++;
+		}
 		
 		if (trail_tick >= spawn_trail_cooldown)
 		{
@@ -202,20 +213,32 @@ switch(state)
 			if (obj_hitbox.myTeam == teams.player)
 			{
 				parry_tick = 0;
+				flash_alpha = 1;
+				
+				scr_screenShake(4, 0.1, 4, 0.1);
 				
 				image_index = 0;
-				if (hp > 0)
+				
+				if (hp > 1)
 				{
+					audio_sound_pitch(sword_hit_sound, random_range(0.9, 1.1));
+					audio_play_sound(sword_hit_sound, 1, false);
+					
 					state = Charger.hit;
 				}
 				else
 				{
 					x_knockback += 2;
+					
+					var _coinDir = 90; 
+	
+					scr_spawnCoins(x,  y - 30, 5, amount_of_coins_to_spawn,_coinDir); 
+
 					state = Charger.die;
 				}
 				
 				var _dir = point_direction(x, y, obj_player.x, obj_player.y);
-				knock_x = lengthdir_x(x_knockback, _dir);	
+				knock_x = lengthdir_x(x_knockback, _dir);
 			}
 		}
 	
@@ -271,6 +294,7 @@ switch(state)
 	case(Charger.die):
 		#region Got hit by the player
 		
+
 		if (sprite_index != deathSprite)
 		{
 			sprite_index = deathSprite;
@@ -278,25 +302,28 @@ switch(state)
 		
 		knock_x = lerp(knock_x, 0, 0.1);
 		
-		vspd = 0;
 		hspd = -knock_x;
 		
 		if (attack_cooldown <= 0)
 		{
+			attack_cooldown = 300;
+			
 			audio_sound_pitch(hurt_sound, random_range(0.9, 1.1));
 			audio_play_sound(hurt_sound, 1, false);
-			
-			hp--;
-			attack_cooldown = 300;
 		}
 		
-		if (abs(knock_x) <= 0.1)
+		if (abs(knock_x) <= 0)
 		{
-			attack_tick = 0;
-			instance_destroy();
+			hspd = 0;			
+			state = Charger.dead;
 		}
 		
 		#endregion 
+		
+		break;
+		
+	case(Charger.dead):
+		sprite_index = deathSprite;
 		break;
 }
 
@@ -323,7 +350,6 @@ if (tile_meeting(x, y + vspd, "Collisions"))
 	y = floor(y);
 	while !(tile_meeting(x, y + sign(vspd), "Collisions"))
 	{
-		show_debug_message(y);
 		y += sign(vspd)
 	}
 	vspd = 0;

@@ -18,6 +18,10 @@ charge_sound = snd_minotaurAlarm;
 hit_sound = snd_placeholderPop;
 hit_wall_sound = snd_placeholderPop;
 
+// The amount of time (in seconds) to wait for playing another step sound
+step_cooldown = 0.1; // in seconds
+step_sound = snd_playerFootstepA
+
 
 hitwall_shake = 3; // The force of the shake when hitting a wall
 
@@ -33,6 +37,12 @@ parried_sound = snd_minotaurGetHit;
 hp = 3;
 hurt_sound = snd_minotaurGetHit;
 x_knockback = 6;
+
+// Sword sound when successful
+sword_hit_sound = snd_playerSwordHitA;
+
+
+amount_of_coins_to_spawn = 10;
 
 // Target variable
 target = obj_player;
@@ -62,6 +72,8 @@ if (charge_duration != -1)
 charge_cooldown *= room_speed;
 parry_cooldown *= room_speed;
 
+step_cooldown *= room_speed;
+
 spawn_trail_cooldown *= room_speed;
 
 enum Charger
@@ -74,8 +86,11 @@ enum Charger
 	stunned,
 	recovered,
 	attacked,
-	die
+	die,
+	dead,
 }
+
+step_tick = 0;
 
 trail_tick = 0;
 
@@ -96,3 +111,6 @@ attack_tick = 0;
 attack_cooldown = 0;
 
 state = Charger.idle;
+
+flash_alpha = 0;
+flash_speed = 0.1;
