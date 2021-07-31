@@ -1,5 +1,5 @@
 // Movement variables
-charge_speed = 8;
+charge_speed = 13;
 
 // Trail varaibles
 spawn_trail_cooldown = 0.02; // in seconds
@@ -12,7 +12,7 @@ prepare_time = 1.5; // In seconds
 charge_duration = 0; // In seconds
 // Leave charge duration as -1 and the charge will only stop after the Charger hit a wall
 face_to_target_while_charging = false;
-charge_friction = 0.05; // In percentage (max 1.0)
+charge_friction = 0.06; // In percentage (max 1.0)
 
 
 build_up_speed = false; // Defines if the Charger needs to add up speed to each the charge_speed
