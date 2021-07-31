@@ -47,6 +47,11 @@ switch(state)
 			prepare_tick = 0;
 			image_index = 0;
 			state = Charger.charge;
+			
+			if (charge_duration == 0)
+			{
+				actual_speed = charge_speed;
+			}
 		}
 		else
 		{
