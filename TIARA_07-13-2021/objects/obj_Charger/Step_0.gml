@@ -104,16 +104,33 @@ switch(state)
 		image_speed = 1;
 		
 		
-		hspd = image_xscale * charge_speed;
+		hspd = image_xscale * actual_speed;
+		
 		
 		// Manages the charge timer
 		charge_tick++;
 		
 		if (charge_tick >= charge_duration and charge_duration != -1)
 		{
-			charge_tick = 0;
-			image_index = 0;
-			state = Charger.attacked;
+			actual_speed = lerp(actual_speed, 0, charge_friction);
+			
+			if (abs(actual_speed) <= 0.5)
+			{
+				charge_tick = 0;
+				image_index = 0;
+				state = Charger.attacked;
+			}
+		}
+		else
+		{
+			if (build_up_speed)
+			{
+				actual_speed = lerp(actual_speed, charge_speed, charge_friction);
+			}
+			else
+			{
+				actual_speed = charge_speed;
+			}
 		}
 		
 		if (tile_meeting(x + hspd, y, "Collisions"))
@@ -139,6 +156,7 @@ switch(state)
 				audio_sound_pitch(parried_sound, random_range(0.9, 1.1));
 				audio_play_sound(parried_sound, 1, false);
 				
+				scr_screenShake(4, 0.1, 4, 0.1);
 				state = Charger.parried;
 			}
 			else if (!attacked)
@@ -293,7 +311,6 @@ switch(state)
 		break;
 	case(Charger.die):
 		#region Got hit by the player
-		
 
 		if (sprite_index != deathSprite)
 		{
