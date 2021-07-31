@@ -12,11 +12,12 @@ prepare_time = 1.5; // In seconds
 charge_duration = 0.8; // In seconds
 // Leave charge duration as -1 and the charge will only stop after the Charger hit a wall
 face_to_target_while_charging = false;
-charge_friction = 0.1;
+charge_friction = 0.05;
 
-build_up_speed = false; // Defines if the Charger needs to add up speed to each the charge_speed
+build_up_speed = true; // Defines if the Charger needs to add up speed to each the charge_speed
 //value or if he just gets that speed at once. This variable does not affect the slow down at the end of
 //a charge
+build_up_rate = 0.1;
 
 charge_sound = snd_minotaurAlarm;
 

@@ -125,7 +125,7 @@ switch(state)
 		{
 			if (build_up_speed)
 			{
-				actual_speed = lerp(actual_speed, charge_speed, charge_friction);
+				actual_speed = lerp(actual_speed, charge_speed, build_up_rate);
 			}
 			else
 			{
