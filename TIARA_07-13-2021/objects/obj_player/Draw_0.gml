@@ -28,3 +28,20 @@ if (global.debugMode == true)
 	draw_sprite(mask_index, 0, x,y); 
 	draw_set_alpha(1); 
 }
+
+if (keyboard_check(vk_shift))
+{
+	activate_shader(shader.volumetriclight)
+}
+else
+{
+	if (sparkle_tick < hit_sparkle_duration)
+	{
+		activate_shader(shader.glitter)
+	}
+	else
+	{
+		deactivate_shader();
+	}
+	sparkle_tick++;
+}

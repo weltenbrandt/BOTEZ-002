@@ -23,3 +23,12 @@ if (global.debugMode == true)
 	draw_text(obj_displayController.ideal_width -160,5, _debugString); 
 	draw_set_color(c_black); 
 }
+
+//if (state == "Dead")
+//{
+//	draw_SHADER_volumeLight(true);
+//}
+//else
+//{
+//	draw_SHADER_volumeLight(false);
+//}

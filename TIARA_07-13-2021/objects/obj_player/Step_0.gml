@@ -1,9 +1,17 @@
 
+
 // If we die, save the game
 if (state == "Dead")
 {
 	save_game();
 }
+
+if (state == "Hit Stun" and sparkle_tick > hit_sparkle_duration)
+{
+	sparkle_tick = 0;
+}
+
+show_debug_message(state)
 
 // PRESS L TO RESTART GAME
 if (keyboard_check_pressed(ord("L")))

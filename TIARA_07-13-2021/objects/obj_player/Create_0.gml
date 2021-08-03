@@ -1,7 +1,5 @@
 event_inherited(); 
 
-
-
 tilemap = layer_tilemap_get_id("Collisions"); 
 
 #region STATE MACHINE INIT
@@ -27,6 +25,17 @@ tilemap = layer_tilemap_get_id("Collisions");
 	onGround = scr_isOnGround(); 
 	if (onGround){scr_stateBeginIn("Idle");}
 	else {scr_stateBeginIn("Fall");}
+#endregion
+
+#region SHADER CONTROLS
+
+hit_sparkle_duration = 0.5; // In seconds
+
+
+
+sparkle_tick = 10000;
+hit_sparkle_duration *= room_speed;
+
 #endregion
 
 #region MOVEMENT PARAMETERS (MODIFY THESE TO ALTER THE WAY THAT PLAYER MOVEMENT FEELS 
