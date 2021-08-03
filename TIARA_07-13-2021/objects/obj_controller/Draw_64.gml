@@ -87,7 +87,7 @@ if global.isShaderEnabled == true
             var u_vRatio = shader_get_uniform(shader, "u_vRatio");
             var u_amplitude = shader_get_uniform(shader, "u_amplitude");
             
-           //amplitude = 0.12;
+           amplitude = 0.12;
             
             shader_set(shader);
                 shader_set_uniform_f(u_vRatio, vRatio);
