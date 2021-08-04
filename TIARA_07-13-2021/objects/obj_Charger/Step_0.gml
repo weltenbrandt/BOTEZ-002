@@ -163,9 +163,12 @@ switch(state)
 				
 				scr_screenShake(4, 0.1, 4, 0.1);
 				state = Charger.parried;
+				
+				create_riddle(x, y);
 			}
 			else if (!attacked)
 			{
+				
 				// Shakes the screen and damages the player
 				scr_screenShake(4, 0.1, 4, 0.1);
 				

@@ -1,8 +1,7 @@
-//next object on the list...
-shaderIndex += 1;
+////next object on the list...
+//shaderIndex += 1;
 
-if shaderIndex >= ds_list_size(shaderList)
-{
-    shaderIndex = 0;
-}
-
+//if shaderIndex >= ds_list_size(shaderList)
+//{
+//    shaderIndex = 0;
+//}

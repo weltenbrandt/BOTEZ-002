@@ -31,7 +31,7 @@ if (global.debugMode == true)
 
 if (keyboard_check(vk_shift))
 {
-	activate_shader(shader.volumetriclight)
+	//activate_shader(shader.volumetriclight)
 }
 else
 {
