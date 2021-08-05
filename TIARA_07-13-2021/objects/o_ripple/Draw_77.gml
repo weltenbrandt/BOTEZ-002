@@ -4,7 +4,7 @@ surface_set_target(surface_distort);
 draw_clear_alpha(COLOUR_FOR_NO_MOVE,0);
 
 // Anything we draw here will distort the screen
-draw_sprite_ext(sRippleNormal,0,x,y, xscale, yscale, 0, c_white, alpha);
+draw_sprite_ext(sRippleNormal,0, x,y, xscale, yscale, 0, c_white, alpha);
 
 surface_reset_target();
 
@@ -22,8 +22,8 @@ surface_free(surface_distort) // always remember to remove the surface from memo
 
 if (alpha >= 0)
 {
-	xscale += 0.1;
-	yscale += 0.1;
+	xscale += 0.05;
+	yscale += 0.05;
 
 	alpha -= 0.05;
 }

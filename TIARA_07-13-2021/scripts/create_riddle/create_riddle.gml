@@ -6,6 +6,7 @@ function create_riddle(_x, _y){
 	{
 		with (o_ripple)
 		{
+			show_debug_message("AAAA")
 			o_ripple.x = _x;
 			o_ripple.y = _y;
 			
