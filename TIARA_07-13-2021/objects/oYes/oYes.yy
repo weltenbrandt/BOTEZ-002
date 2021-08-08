@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sYes",
+    "path": "sprites/sYes/sYes.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
