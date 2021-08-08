@@ -4,5 +4,3 @@ if (my_room != noone)
 	
 	
 }
-
-show_debug_message(my_room);

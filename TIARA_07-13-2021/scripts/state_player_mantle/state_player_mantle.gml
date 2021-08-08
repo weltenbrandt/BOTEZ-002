@@ -4,7 +4,7 @@ function state_player_mantle() {
 		scr_playSoundVocalize(id,.1, snd_playerMantleA); 
 		velocity[XAXIS] = 0; 
 		velocity[YAXIS] = 0;
-		show_debug_message("WALL MANTLE START, FACING: " + string(facing)); 
+
 	
 		if (state == "Mantle")
 		{

@@ -23,7 +23,6 @@ if (file_exists("save.sav"))
 		var _loadEntity = array_pop(_loadData);
 		with(instance_create_depth(0, 0, layer, oRoomLoad))
 		{
-			show_debug_message("WOW")
 			my_room = _loadEntity.my_room;
 		}
 	}

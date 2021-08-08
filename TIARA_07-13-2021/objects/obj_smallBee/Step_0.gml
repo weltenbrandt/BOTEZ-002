@@ -22,9 +22,6 @@ switch(state)
 				knock_x = lengthdir_x(x_knockout, _dir);
 				knock_y = lengthdir_y(y_knockout, _dir);
 				
-				show_debug_message(knock_x);
-				show_debug_message(knock_y);
-				
 			}
 		}
 		
@@ -95,9 +92,6 @@ switch(state)
 				var _dir = point_direction(x, y, obj_player.x, obj_player.y);
 				knock_x = lengthdir_x(x_knockout, _dir);
 				knock_y = lengthdir_y(y_knockout, _dir);
-				
-				show_debug_message(knock_x);
-				show_debug_message(knock_y);
 				
 			}
 		}

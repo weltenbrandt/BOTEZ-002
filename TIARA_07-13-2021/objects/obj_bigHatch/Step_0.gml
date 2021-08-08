@@ -6,7 +6,6 @@ if (!already_spawned and image_index == spawn_at_frame)
 	already_spawned = true;
 }
 
-show_debug_message(tick)
 
 // Here we check the small hatches next to this object
 

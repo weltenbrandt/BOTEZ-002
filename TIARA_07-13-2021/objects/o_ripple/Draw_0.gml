@@ -1,0 +1,1 @@
+draw_text(x, y, "I'm here")

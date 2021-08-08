@@ -1,8 +1,5 @@
 
-show_debug_message(image_index);
-show_debug_message(current_scene[0]);
 
-//show_debug_message(current_scene[0] < image_index)
 if (scene != -1)
 {
 	if (image_index >= current_scene[0] - 1)
