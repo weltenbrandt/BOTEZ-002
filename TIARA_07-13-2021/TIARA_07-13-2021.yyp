@@ -93,6 +93,7 @@
     {"id":{"name":"spr_zoomInZone","path":"sprites/spr_zoomInZone/spr_zoomInZone.yy",},"order":3,},
     {"id":{"name":"spr_zoomOutZone","path":"sprites/spr_zoomOutZone/spr_zoomOutZone.yy",},"order":5,},
     {"id":{"name":"spr_floorSpikes","path":"sprites/spr_floorSpikes/spr_floorSpikes.yy",},"order":0,},
+    {"id":{"name":"oShootingWord","path":"objects/oShootingWord/oShootingWord.yy",},"order":6,},
     {"id":{"name":"spr_wallSpikesLeft","path":"sprites/spr_wallSpikesLeft/spr_wallSpikesLeft.yy",},"order":1,},
     {"id":{"name":"spr_wallSpikesRight","path":"sprites/spr_wallSpikesRight/spr_wallSpikesRight.yy",},"order":2,},
     {"id":{"name":"spr_guiHeart","path":"sprites/spr_guiHeart/spr_guiHeart.yy",},"order":1,},
