@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sYes",
-    "path": "sprites/sYes/sYes.yy",
+    "name": "sNo",
+    "path": "sprites/sNo/sNo.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
     "path": "folders/Objects/Twatch Boss.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oYes",
+  "name": "oNo",
   "tags": [],
   "resourceType": "GMObject",
 }

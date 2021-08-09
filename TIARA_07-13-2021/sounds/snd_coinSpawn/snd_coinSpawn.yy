@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_coinSpawn",
-  "duration": 0.488356,
+  "duration": 0.483356,
   "parent": {
     "name": "Collectibles",
     "path": "folders/Sounds/Collectibles.yy",

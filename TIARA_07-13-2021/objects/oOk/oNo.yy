@@ -31,7 +31,7 @@
     "path": "folders/Objects/Twatch Boss.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oYes",
+  "name": "oNo",
   "tags": [],
   "resourceType": "GMObject",
 }
