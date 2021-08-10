@@ -1,6 +1,7 @@
-var threw = global.inputAttackPressed;
-
-show_debug_message(threw)
+if (global.inputAttackPressed)
+{
+	threw = true;
+}
 
 // Gets grabbed by the player
 if (place_meeting(x, y, obj_player) and !carrying)
@@ -29,5 +30,6 @@ if (carrying = true)
 }
 else
 {
-	x -= movement_speed;
+	y += yspd;
+	x += xspd;
 }
