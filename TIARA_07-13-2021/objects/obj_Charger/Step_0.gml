@@ -256,9 +256,7 @@ switch(state)
 				{
 					x_knockback += 2;
 					
-					var _coinDir = 90; 
-	
-					scr_spawnCoins(x,  y - 30, 5, amount_of_coins_to_spawn,_coinDir); 
+					
 
 					state = Charger.die;
 				}
@@ -337,9 +335,10 @@ switch(state)
 			audio_play_sound(hurt_sound, 1, false);
 		}
 		
-		if (abs(knock_x) <= 0)
+		if (abs(knock_x) <= 0.05)
 		{
-			hspd = 0;			
+			hspd = 0;
+			alarm[0] = 2;
 			state = Charger.dead;
 		}
 		
