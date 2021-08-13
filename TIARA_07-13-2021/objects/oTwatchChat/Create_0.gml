@@ -9,6 +9,11 @@ bar_y_offest = 0;
 // Words variable
 throw_cooldown = 5 * room_speed;
 
+// Curves
+curve_asset = cTwatchCurve;
+curve_position = 0;
+curve_speed = 0.014;
+
 enum wordtype
 {
 	word,
@@ -21,6 +26,8 @@ enum wordtype
 
 // This is the layout:
 //["The word", no, ok, yes]
+
+
 
 word = [
 	["N word", 2, -2, -4],
@@ -39,3 +46,5 @@ state = twatchstates.word;
 
 throw_tick = 0;
 spawn_word_tick = 0;
+
+lastHoverY = y;

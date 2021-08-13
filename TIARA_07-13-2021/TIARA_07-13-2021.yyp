@@ -616,6 +616,7 @@
     {"id":{"name":"par_particle","path":"objects/par_particle/par_particle.yy",},"order":1,},
     {"id":{"name":"obj_smallHatch","path":"objects/obj_smallHatch/obj_smallHatch.yy",},"order":0,},
     {"id":{"name":"obj_hitParticle","path":"objects/obj_hitParticle/obj_hitParticle.yy",},"order":3,},
+    {"id":{"name":"cTwatchCurve","path":"animcurves/cTwatchCurve/cTwatchCurve.yy",},"order":0,},
     {"id":{"name":"obj_fireSkullBulletExplode","path":"objects/obj_fireSkullBulletExplode/obj_fireSkullBulletExplode.yy",},"order":5,},
     {"id":{"name":"par_collectible","path":"objects/par_collectible/par_collectible.yy",},"order":1,},
     {"id":{"name":"obj_collectibleCoin","path":"objects/obj_collectibleCoin/obj_collectibleCoin.yy",},"order":3,},

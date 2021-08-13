@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 27,
-  "bbox_right": 98,
-  "bbox_top": 10,
-  "bbox_bottom": 120,
+  "bbox_left": 33,
+  "bbox_right": 171,
+  "bbox_top": 15,
+  "bbox_bottom": 145,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 128,
-  "height": 128,
+  "width": 203,
+  "height": 167,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,24 +24,68 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"21ea60d4-5c46-4373-bccf-9b4f3e0dd789","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"21ea60d4-5c46-4373-bccf-9b4f3e0dd789","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"99f243b7-d980-4e98-b26f-b20e5f11e1b1","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"21ea60d4-5c46-4373-bccf-9b4f3e0dd789","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eb419541-0e65-4822-a52a-eaeeea913bdb","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eb419541-0e65-4822-a52a-eaeeea913bdb","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"eb419541-0e65-4822-a52a-eaeeea913bdb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"de62c6ee-6950-4789-a5c7-06a790fb2130","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"de62c6ee-6950-4789-a5c7-06a790fb2130","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"de62c6ee-6950-4789-a5c7-06a790fb2130","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"05cefadc-b03f-4818-9690-9aee07d0a57f","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"05cefadc-b03f-4818-9690-9aee07d0a57f","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"05cefadc-b03f-4818-9690-9aee07d0a57f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"212528c6-33bb-4f86-88ba-1ab9972c3be3","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"212528c6-33bb-4f86-88ba-1ab9972c3be3","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"212528c6-33bb-4f86-88ba-1ab9972c3be3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"11cd7bc8-aeed-4dd7-8b92-5ba09a6e07e4","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"11cd7bc8-aeed-4dd7-8b92-5ba09a6e07e4","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"11cd7bc8-aeed-4dd7-8b92-5ba09a6e07e4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"52d5088d-7f1b-4c31-9c65-01990983b41e","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"52d5088d-7f1b-4c31-9c65-01990983b41e","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"52d5088d-7f1b-4c31-9c65-01990983b41e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0948e000-0b62-444e-8735-52ac54ef47e8","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0948e000-0b62-444e-8735-52ac54ef47e8","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"0948e000-0b62-444e-8735-52ac54ef47e8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0b871962-7040-4ccb-bd59-b61481b6f9ea","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0b871962-7040-4ccb-bd59-b61481b6f9ea","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"0b871962-7040-4ccb-bd59-b61481b6f9ea","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b0c57ac5-b87a-4131-8a00-22fc8bcf9283","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b0c57ac5-b87a-4131-8a00-22fc8bcf9283","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"b0c57ac5-b87a-4131-8a00-22fc8bcf9283","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3bb58064-440b-414a-a9ac-94d28acb260c","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3bb58064-440b-414a-a9ac-94d28acb260c","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"3bb58064-440b-414a-a9ac-94d28acb260c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e61dbfec-8608-42b8-b301-2508d6f23110","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e61dbfec-8608-42b8-b301-2508d6f23110","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"e61dbfec-8608-42b8-b301-2508d6f23110","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c9f2664a-9563-4917-a8c1-2d832d1a5f4c","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c9f2664a-9563-4917-a8c1-2d832d1a5f4c","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"LayerId":{"name":"f1763f27-5eac-42a1-8db5-33105eb7b804","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","name":"c9f2664a-9563-4917-a8c1-2d832d1a5f4c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 12.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"004a314b-468a-44fa-94b5-b174d1e712e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"21ea60d4-5c46-4373-bccf-9b4f3e0dd789","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e3d30ad8-57b2-4976-b0a8-4b5ac413e262","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eb419541-0e65-4822-a52a-eaeeea913bdb","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b5723264-748b-45a4-a166-1a9c4fd7fddc","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"de62c6ee-6950-4789-a5c7-06a790fb2130","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2aaec65a-700e-45aa-bf13-a1c5b38f64bd","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"05cefadc-b03f-4818-9690-9aee07d0a57f","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b1a954f4-ad18-4483-a45b-0b1755b325df","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"212528c6-33bb-4f86-88ba-1ab9972c3be3","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"11dd960e-5fbd-4e8b-b33c-a6c72f7d6eb6","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11cd7bc8-aeed-4dd7-8b92-5ba09a6e07e4","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4c8eb37d-16ab-4ad0-8645-c4dd91c05727","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"52d5088d-7f1b-4c31-9c65-01990983b41e","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0572a5e9-30c0-4ee2-a66e-21d9475ed3b0","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0948e000-0b62-444e-8735-52ac54ef47e8","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3081ae53-53d3-4cd3-9e06-680383961230","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b871962-7040-4ccb-bd59-b61481b6f9ea","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0fd56cee-35b2-4cd9-98c5-c49a6946c972","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b0c57ac5-b87a-4131-8a00-22fc8bcf9283","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0ea79e59-6391-42e2-876e-84e1c584d1d0","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3bb58064-440b-414a-a9ac-94d28acb260c","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6bd6dde1-ce84-4d80-be50-6b1086d9dd20","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e61dbfec-8608-42b8-b301-2508d6f23110","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3a4b3a24-2431-441c-b5ea-7c0798f46de1","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9f2664a-9563-4917-a8c1-2d832d1a5f4c","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -55,7 +99,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 0,
-    "yorigin": 64,
+    "yorigin": 83,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sTwatchBossIdle","path":"sprites/sTwatchBossIdle/sTwatchBossIdle.yy",},
@@ -65,7 +109,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"99f243b7-d980-4e98-b26f-b20e5f11e1b1","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f1763f27-5eac-42a1-8db5-33105eb7b804","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
