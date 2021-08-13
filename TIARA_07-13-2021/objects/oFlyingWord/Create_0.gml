@@ -1,5 +1,11 @@
 
-
+with(obj_player)
+{
+	if (!variable_instance_exists(id, "carrying_word"))
+	{
+		carrying_word = false;
+	}
+}
 
 // Movement
 movement_speed = 5;

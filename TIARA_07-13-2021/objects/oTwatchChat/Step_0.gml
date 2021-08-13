@@ -1,3 +1,14 @@
+hp = clamp(hp, 0, hp_max)
+
+spawn_word_tick++;
+if (spawn_word_tick >= 10)
+{
+	spawn_word_tick = 0;
+	var _x = x + sprite_width / 2;
+	var _y = y + sprite_width / 2;
+	instance_create_depth(_x, _y, depth, oSurroundingWord);
+}
+
 switch(state)
 {
 	

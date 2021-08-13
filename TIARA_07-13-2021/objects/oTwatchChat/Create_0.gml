@@ -38,5 +38,4 @@ enum twatchstates
 state = twatchstates.word;
 
 throw_tick = 0;
-
-shoot_word = "";
+spawn_word_tick = 0;
