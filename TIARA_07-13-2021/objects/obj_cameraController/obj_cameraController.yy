@@ -4,7 +4,7 @@
     "path": "sprites/spr_cameraController/spr_cameraController.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

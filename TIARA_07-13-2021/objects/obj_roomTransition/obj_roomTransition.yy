@@ -4,7 +4,7 @@
     "path": "sprites/spr_roomTransition/spr_roomTransition.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {

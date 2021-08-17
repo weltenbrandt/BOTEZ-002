@@ -4,7 +4,7 @@
     "path": "sprites/spr_gameDataController/spr_gameDataController.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {

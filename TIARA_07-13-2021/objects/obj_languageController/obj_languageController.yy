@@ -4,7 +4,7 @@
     "path": "sprites/spr_languageController/spr_languageController.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {

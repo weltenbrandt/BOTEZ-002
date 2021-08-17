@@ -4,7 +4,7 @@
     "path": "sprites/spr_systemController/spr_systemController.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {

@@ -4,7 +4,7 @@
     "path": "sprites/spr_particleController/spr_particleController.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {
