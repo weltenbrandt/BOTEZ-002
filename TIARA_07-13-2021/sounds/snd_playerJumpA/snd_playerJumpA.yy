@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.26,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_playerJumpA",
-  "duration": 0.126905,
+  "duration": 0.121905,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",

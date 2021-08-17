@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_pick_1",
-  "duration": 0.062279,
+  "duration": 0.057279,
   "parent": {
     "name": "Collectibles",
     "path": "folders/Sounds/Collectibles.yy",

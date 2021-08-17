@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.57,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_pickup1",
-  "duration": 0.140034,
+  "duration": 0.135034,
   "parent": {
     "name": "Collectibles",
     "path": "folders/Sounds/Collectibles.yy",

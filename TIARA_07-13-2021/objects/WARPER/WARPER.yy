@@ -4,7 +4,7 @@
     "path": "sprites/spr_playerMask/spr_playerMask.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

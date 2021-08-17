@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_coinGet2",
-  "duration": 0.44754,
+  "duration": 0.44254,
   "parent": {
     "name": "Collectibles",
     "path": "folders/Sounds/Collectibles.yy",

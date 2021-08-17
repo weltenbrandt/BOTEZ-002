@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.34,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_playerRunTurnA",
-  "duration": 0.552982,
+  "duration": 0.547982,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",

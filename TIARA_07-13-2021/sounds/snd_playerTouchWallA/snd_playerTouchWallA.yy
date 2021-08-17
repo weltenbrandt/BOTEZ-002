@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_playerTouchWallA",
-  "duration": 0.156066,
+  "duration": 0.151066,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",

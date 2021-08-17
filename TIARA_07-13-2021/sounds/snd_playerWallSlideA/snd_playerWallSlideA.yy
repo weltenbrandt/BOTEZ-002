@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.44,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_playerWallSlideA",
-  "duration": 1.80164409,
+  "duration": 1.796644,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",

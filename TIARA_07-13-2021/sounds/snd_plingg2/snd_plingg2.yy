@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_plingg2",
-  "duration": 0.123299,
+  "duration": 0.118299,
   "parent": {
     "name": "Collectibles",
     "path": "folders/Sounds/Collectibles.yy",
