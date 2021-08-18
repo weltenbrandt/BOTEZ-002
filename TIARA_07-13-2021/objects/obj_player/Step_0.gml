@@ -1,4 +1,12 @@
-
+if (instance_exists(oPlayerSpawn))
+{
+	visible = false;
+	exit;
+}
+else
+{
+	visible = true;
+}
 
 // If we die, save the game
 if (state == "Dead")
