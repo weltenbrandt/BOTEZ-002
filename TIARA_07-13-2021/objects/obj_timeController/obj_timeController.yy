@@ -4,7 +4,7 @@
     "path": "sprites/spr_timeController/spr_timeController.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {

@@ -4,7 +4,7 @@
     "path": "sprites/spr_inputController/spr_inputController.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {

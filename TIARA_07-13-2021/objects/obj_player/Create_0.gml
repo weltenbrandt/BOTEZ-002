@@ -1,5 +1,7 @@
 event_inherited(); 
 
+instance_create_depth(x, y, depth, oPlayerSpawn);
+
 tilemap = layer_tilemap_get_id("Collisions"); 
 
 #region STATE MACHINE INIT
