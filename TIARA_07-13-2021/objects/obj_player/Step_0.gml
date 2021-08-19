@@ -35,11 +35,6 @@ if (global.timeStop <= 0)
 	onGround = scr_isOnGround(); 
 	if (onGround){dashDuringJumpCounter = 0;}
 	
-	if (instance_exists(oTextbox))
-	{
-		scr_stateSwitch("Idle");
-		velocity[XAXIS] = 0;
-	}
 
 	if (!in_bumper)
 	{

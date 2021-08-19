@@ -3,14 +3,18 @@
 horizontal_force = lengthdir_x(1, bumper_angle + 90) * force;
 vertical_force = lengthdir_y(1, bumper_angle + 90) * force;
 
-// Handles input
+// Handles inputd
 var dir = (global.inputLeftHeld - global.inputRightHeld) * turn_speed;
 var launch = global.inputJumpPressed;
 
 // If the player is in, activate
 if ((distance_to_object(obj_player) < collision_radius) and launch == false)
 {	
-	obj_player.in_bumper = true;
+	if (obj_player.in_bumper != true)
+	{
+		audio_play_sound(sndGetInBumper, 10, false);
+		obj_player.in_bumper = true;
+	}
 	
 	if (active == false)
 	{
@@ -46,7 +50,7 @@ if (active)
 	}
 	
 	// Controls the direction of the bumper
-	bumper_angle += (angle - bumper_angle) / (30 / turn_speed);
+	bumper_angle += (angle - bumper_angle); /// (30 / turn_speed);
 
 	if !(angle + dir >= orig_angle + 60) and !(angle + dir <= orig_angle - 60)
 	{
@@ -67,10 +71,15 @@ if (active)
 	// Launches the player
 	if (launch)
 	{
+		
+		scr_screenShake(4, 0.1, 4, 0.1);
 		active = false;
 		timer = initial_timer;
 		tick_speed = 1;
 		flash_tick = 0;
+		
+		audio_play_sound(sndLaunchBumper, 1, false);
+		
 		with(obj_player)
 		{
 			

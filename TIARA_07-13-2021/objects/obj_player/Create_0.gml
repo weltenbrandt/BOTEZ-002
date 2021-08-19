@@ -1,6 +1,7 @@
 event_inherited(); 
 
 instance_create_depth(x, y, depth, oPlayerSpawn);
+audio_play_sound(sndSpawn, 1, false);
 
 tilemap = layer_tilemap_get_id("Collisions"); 
 

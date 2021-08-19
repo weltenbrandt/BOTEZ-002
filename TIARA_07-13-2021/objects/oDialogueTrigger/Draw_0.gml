@@ -30,7 +30,7 @@ if (activate == true)
 }
 
 // If the cooldown is on 0 and player is on dialogue trigger object
-if (place_meeting(x, y, obj_player) and grounded and cooldown <= 0)
+if (place_meeting(x, y, obj_player) and cooldown <= 0)
 {
 	
 	// Creates the dialogue
