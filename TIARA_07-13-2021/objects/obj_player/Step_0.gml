@@ -35,7 +35,13 @@ if (global.timeStop <= 0)
 	onGround = scr_isOnGround(); 
 	if (onGround){dashDuringJumpCounter = 0;}
 	
-
+	// Removes horizontal movement and switches states to idle if a dialogue was started
+	if (instance_exists(oTextbox))
+	{
+		state = "Idle";
+		velocity[XAXIS] = 0;
+	}
+	
 	if (!in_bumper)
 	{
 		scr_stateExecute();

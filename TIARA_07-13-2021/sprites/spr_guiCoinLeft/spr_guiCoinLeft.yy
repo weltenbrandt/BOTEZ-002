@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 3,
+  "origin": 9,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ac455231-420e-4a48-80e2-7b6d4f0909ef","path":"sprites/spr_guiCoin/spr_guiCoin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ac455231-420e-4a48-80e2-7b6d4f0909ef","path":"sprites/spr_guiCoin/spr_guiCoin.yy",},"LayerId":{"name":"2499857d-de1f-4844-b84d-cfbeff919d12","path":"sprites/spr_guiCoin/spr_guiCoin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_guiCoin","path":"sprites/spr_guiCoin/spr_guiCoin.yy",},"resourceVersion":"1.0","name":"ac455231-420e-4a48-80e2-7b6d4f0909ef","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ac455231-420e-4a48-80e2-7b6d4f0909ef","path":"sprites/spr_guiCoinLeft/spr_guiCoinLeft.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ac455231-420e-4a48-80e2-7b6d4f0909ef","path":"sprites/spr_guiCoinLeft/spr_guiCoinLeft.yy",},"LayerId":{"name":"2499857d-de1f-4844-b84d-cfbeff919d12","path":"sprites/spr_guiCoinLeft/spr_guiCoinLeft.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_guiCoinLeft","path":"sprites/spr_guiCoinLeft/spr_guiCoinLeft.yy",},"resourceVersion":"1.0","name":"ac455231-420e-4a48-80e2-7b6d4f0909ef","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_guiCoin","path":"sprites/spr_guiCoin/spr_guiCoin.yy",},
+    "spriteId": {"name":"spr_guiCoinLeft","path":"sprites/spr_guiCoinLeft/spr_guiCoinLeft.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"af0245bc-40c0-42e8-ad40-e08fae2e3a09","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ac455231-420e-4a48-80e2-7b6d4f0909ef","path":"sprites/spr_guiCoin/spr_guiCoin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b64d90c4-b613-4c0c-83b2-baae87b2d4e1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ac455231-420e-4a48-80e2-7b6d4f0909ef","path":"sprites/spr_guiCoinLeft/spr_guiCoinLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,13 +54,13 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 13,
+    "xorigin": 30,
+    "yorigin": 14,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_guiCoin","path":"sprites/spr_guiCoin/spr_guiCoin.yy",},
+    "parent": {"name":"spr_guiCoinLeft","path":"sprites/spr_guiCoinLeft/spr_guiCoinLeft.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_guiCoin",
+    "name": "spr_guiCoinLeft",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_guiCoin",
+  "name": "spr_guiCoinLeft",
   "tags": [],
   "resourceType": "GMSprite",
 }
