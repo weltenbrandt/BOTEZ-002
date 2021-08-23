@@ -15,6 +15,20 @@ function scr_checkForNewInputDevice() {
 		}
 	}
 
+	if (instance_exists(oGamepadConnecMenu))
+	{
+		var _id = oGamepadConnecMenu.gamepad_id;
+		
+		if (inputDevice != _id)
+		{
+			debugTextTimer = 120; 
+			debugShowText = "Input Set: "  + "Gamepad: " + string(_id); 
+			instance_destroy(oGamepadConnecMenu);
+			return _id; 
+		}	
+		
+	}
+
 	if (keyboard_check_pressed(vk_anykey))
 	{
 		if (inputDevice != -1)

@@ -8,11 +8,9 @@ else
 	visible = true;
 }
 
-// If we die, save the game
-if (state == "Dead")
-{
-	save_game();
-}
+// Save the game
+save_game();
+
 
 if (state == "Hit Stun" and sparkle_tick > hit_sparkle_duration)
 {

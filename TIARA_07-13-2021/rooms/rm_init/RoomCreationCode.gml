@@ -1,2 +1,2 @@
 //room_goto(rm_test); 
-room_goto(rm_Menu);
+room_goto(rm_Intro);

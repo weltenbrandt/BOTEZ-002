@@ -6,3 +6,5 @@ else
 {
 	image_alpha = 0.5;
 }
+
+play_hover_sound = true;
