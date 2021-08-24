@@ -113,6 +113,21 @@ function scr_updateActorLocation() {
 				separateXDir = 0; 
 				_wallStruck = true; 
 			}
+			
+			if (place_meeting(x + xspd, y, par_solid))
+			{
+				while !(place_meeting(x + sign(xspd), y, par_solid))
+				{
+					x += sign(xspd);
+				}
+				velocity[XAXIS] = 0; 
+				xspd = 0;
+				launched = false;
+				horizontalWindForce = 0;
+				horWindSmooth = 0;
+				separateXDir = 0; 
+				_wallStruck = true; 
+			}
 	#endregion
 
 	#region VERTICAL COLLISION
@@ -167,6 +182,21 @@ function scr_updateActorLocation() {
 				verWindSmooth = 0
 				_wallStruck = true; 
 			}
+			
+			if (place_meeting(x , y + yspd, par_solid))
+			{
+				while !(place_meeting(x, y + sign(yspd), par_solid))
+				{
+					y += sign(yspd);
+				}
+				velocity[YAXIS] = 0;
+				yspd = 0;	
+				launched = false;
+				verticalWindForce = 0;
+				verWindSmooth = 0
+				separateYDir = 0;
+				_wallStruck = true; 
+			}
 	#endregion
 	
 	}
@@ -196,7 +226,7 @@ function scr_updateActorLocation() {
 			{
 				x = owner.x + xOffset*owner.facing;
 				y = owner.y + yOffset; 
-				x -= image_xscale*.5;
+				x -= image_xscale*.5;	
 				y -= image_yscale*.5;
 				event_perform(ev_other,ev_user0); // CHECK FOR HITS/COLLISIONS
 			}
