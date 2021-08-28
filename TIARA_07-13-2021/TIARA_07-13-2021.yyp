@@ -587,6 +587,7 @@
     {"id":{"name":"TGMS_ExecuteEvent","path":"scripts/TGMS_ExecuteEvent/TGMS_ExecuteEvent.yy",},"order":351,},
     {"id":{"name":"TGMS_TweensExecute","path":"scripts/TGMS_TweensExecute/TGMS_TweensExecute.yy",},"order":353,},
     {"id":{"name":"spr_smallBeeCharge","path":"sprites/spr_smallBeeCharge/spr_smallBeeCharge.yy",},"order":4,},
+    {"id":{"name":"room_PAUL_08","path":"rooms/room_PAUL_08/room_PAUL_08.yy",},"order":27,},
     {"id":{"name":"pWordPlacement","path":"objects/pWordPlacement/pWordPlacement.yy",},"order":3,},
     {"id":{"name":"TGMS_ClearRoom","path":"scripts/TGMS_ClearRoom/TGMS_ClearRoom.yy",},"order":355,},
     {"id":{"name":"TGMS_FetchTween","path":"scripts/TGMS_FetchTween/TGMS_FetchTween.yy",},"order":357,},
@@ -727,6 +728,7 @@
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"roomId":{"name":"rm_initiate_systems","path":"rooms/rm_initiate_systems/rm_initiate_systems.yy",},},
     {"roomId":{"name":"rm_Intro","path":"rooms/rm_Intro/rm_Intro.yy",},},
+    {"roomId":{"name":"room_PAUL_08","path":"rooms/room_PAUL_08/room_PAUL_08.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":7,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -899,7 +901,7 @@
     {"CopyToMask":144150411102650606,"filePath":"datafiles","resourceVersion":"1.0","name":"how to use.html","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.3.574",
+    "IDEVersion": "2.3.3.570",
   },
   "resourceVersion": "1.4",
   "name": "TIARA_07-13-2021",
