@@ -1,6 +1,6 @@
 var grounded = false;
 
-draw_self();
+
 
 // Checks if the player is on the ground, so the dialogue can be started
 with (obj_player)
