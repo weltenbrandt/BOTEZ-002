@@ -20,7 +20,8 @@ function macros() {
 		NAME,
 		IMAGE,
 		SOUND,
-		MESSAGESPEED
+		MESSAGESPEED,
+		PORTRAITSIDE
 	}
 
 	enum cameraZoneTypes

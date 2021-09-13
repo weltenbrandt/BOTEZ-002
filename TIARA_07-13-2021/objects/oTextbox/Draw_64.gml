@@ -6,6 +6,7 @@ var _arr = messages[| messageID];
 
 var _name = _arr[MSG.NAME];
 var _image = _arr[MSG.IMAGE];
+var _portraitside = _arr[MSG.PORTRAITSIDE];
 
 // Set text font
 draw_set_font(fntPixel);
@@ -24,8 +25,14 @@ if (sprite_exists(_image)) {
 	var _imageH = sprite_get_height(_image);
 	
 	// Draw
-	draw_sprite(_image, 0, _drawX + _imageW / 2, _drawY + _imageH / 2);
-	
+	if (_portraitside != "right")
+	{
+		draw_sprite(_image, 0, _drawX + _imageW / 2, _drawY + _imageH / 2);
+	}
+	else
+	{
+		draw_sprite(_image, 0, display_get_gui_width() - _imageW / 2, _drawY + _imageH / 2);
+	}
 	
 	// Offset drawing position for text
 	_drawX += _imageW + padding;
@@ -44,7 +51,15 @@ _drawY += string_height(_name) + padding;
 var _maxW = width - (_drawX + padding);
 
 // Draw text
-draw_text_ext(_drawX, _drawY, messageText, -1, _maxW);
+if (_portraitside == "right")
+{
+	draw_text_ext(_drawX - (_imageW), _drawY, messageText, -1, _maxW);
+}
+else
+{
+	draw_text_ext(_drawX, _drawY, messageText, -1, _maxW);
+}
+
 
 // Draw button when skipable
 if (skipable)
